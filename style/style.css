@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* navbar styling  */
+
+/* style of hero page  */
+.hero-page {
+  min-height: 100vh;
+  width: 100%;
+}
+.hero-page .container {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  /* align-items: left; */
+}
+.hero-page .container .hero-page-title {
+  /* border: 1px solid white; */
+  color: white;
+  padding: 10px 0;
+}
+.hero-page .container .hero-page-title h2 {
+  font-size: 55px;
+}
+.hero-page .container .hero-page-title h1 {
+  font-size: 144px;
+  color: rgba(37, 131, 253);
+  margin: -25px 0;
+  background: -webkit-linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-page .container .hero-page-title p {
+  font-weight: 400;
+  font-size: 35px;
+}
+.container button {
+  margin-left: -313px;
+  margin-top: 10px;
+  padding: 15px 35px;
+  font-size: 27px;
+  font-weight: 500;
+  color: aliceblue;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.container button:hover {
+  color: white;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+/* responsive css */
+@media only screen and (max-width: 1024px) {
+  .hero-page .container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero-page {
+    min-height: 100vh;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .hero-page .container {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+  }
+  .hero-page .container .hero-page-title {
+    /* padding: 0 5px; */
+    margin-left: -22px;
+    text-align: center;
+  }
+  .hero-page .container .hero-page-title h2 {
+    font-size: 25px;
+  }
+  .hero-page .container .hero-page-title h1 {
+    font-size: 84px;
+  }
+  .hero-page .container .hero-page-title p {
+    font-size: 22px;
+  }
+  .container button {
+    /* margin-left: -90px; */
+    display: block;
+    /* margin: 10px ; */
+    margin-left: -27px;
+    font-size: 20px;
+    padding: 10px 25px;
+  }
+}
+
+/* for small display sizes  */
+
+@media only screen and (max-width: 320px) {
+  .hero-page .container .hero-page-title h2 {
+    font-size: 20px;
+  }
+  .hero-page .container .hero-page-title h1 {
+    font-size: 72px;
+  }
+  .hero-page .container .hero-page-title p {
+    font-size: 18px;
+  }
+  .hero-page .container .hero-page-title {
+    margin-left: -5px;
+    text-align: center;
+  }
+  .container button {
+    margin-left: -12px;
+  }
+}
