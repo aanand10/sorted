@@ -63,6 +63,59 @@
   background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
 }
 
+/* solution section styling  */
+.solution-section {
+  min-height: 100vh;
+}
+.solution-section .vdo-section {
+  min-height: 100vh;
+  width: 100%;
+  border: 1px solid red;
+}
+.solution-section .vdo-section .vdo-title {
+  min-height: 70vh;
+  width: 100%;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.solution-section .vdo-section .vdo-title .title-text {
+  border: 1px solid green;
+  min-width: 50%;
+  text-align: left;
+  padding: 10px 30px;
+  font-size: 22px;
+}
+.solution-section .vdo-section .vdo-title .vdo {
+  min-width: 50%;
+}
+.solution-section .counter-section {
+  height: 30vh;
+  width: 100%;
+  border: 1px solid rgb(60, 255, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.solution-section .counter-section .counter-box {
+  height: 25vh;
+  width: 20%;
+  border: #0093e9 1px solid;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.solution-section .counter-section .counter-box h2 {
+  font-size: 80px;
+}
+.solution-section .counter-section .counter-box p {
+  font-size: 30px;
+}
 /* responsive css */
 @media only screen and (max-width: 1024px) {
   .hero-page .container {
