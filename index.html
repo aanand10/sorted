@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sort-ed</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- css for mobile  -->
+    <!-- <link
+      rel="stylesheet"
+      src="style/style-mobile.css"
+      media="screen and (max-width: 600px)"
+    /> -->
+
+    <!-- nav bar js  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- vanta js code  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar section -->
+
+    <!-- navbar section ends  -->
+    <!-- hero section starts  -->
+    <section id="hero-page" class="hero-page">
+      <div class="container">
+        <div class="hero-page-title">
+          <h2>Introducing</h2>
+          <h1>Sort-ed</h1>
+          <p>Launching Nashik Chapter</p>
+        </div>
+        <button>Register Now</button>
+      </div>
+    </section>
+    <!-- hero section ends  -->
+    <!-- solution section starts  -->
+    <section
+      style="height: 100vh"
+      class="solution-section"
+      id="solution-section"
+    >
+      <!--  this is covering all the page -->
+      <div class="vdo-section" id="vdo-section">
+        <div class="vdo-title" id="vdo-title">
+          <div class="title-text">
+            <h2>
+              Drop The Idea of buying pricey textbooks <br />
+              or unproductive e-books
+            </h2>
+            <p>
+              Insted get real books aat your door step at <br />just 1999/yr
+            </p>
+          </div>
+          <div class="vdo">
+            <iframe
+              width="480"
+              height="272"
+              src="https://www.youtube.com/embed/yx-HYerClEA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="counter-section">
+          <div class="counter-box">
+            <h2>2000+</h2>
+            <p>Registrations</p>
+          </div>
+          <div class="counter-box">
+            <h2>2000+</h2>
+            <p>Publications</p>
+          </div>
+          <div class="counter-box">
+            <h2>2000+</h2>
+            <p>Colleges</p>
+          </div>
+          <div class="counter-box">
+            <h2>2000+</h2>
+            <p>Ambassadors</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- js part -->
+
+    <script type="text/javascript">
+      $(".btn").on("click", function () {
+        $(".menu").toggleClass("show");
+      });
+    </script>
+    <!-- vanta js script  -->
+    <script>
+      VANTA.BIRDS({
+        el: "#hero-page",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+      });
+    </script>
+  </body>
+</html>
