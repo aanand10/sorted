@@ -151,6 +151,9 @@
   .hero-page .container {
     width: 90%;
   }
+  .hero-page .container .hero-page-title {
+    margin-left: -10px;
+  }
   /* VDO SECTION  */
   .solution-section .vdo-section {
     height: auto;
@@ -204,7 +207,7 @@
   }
   .hero-page .container .hero-page-title {
     /* padding: 0 5px; */
-    margin-left: -22px;
+    margin-left: -10px;
     text-align: center;
   }
   .hero-page .container .hero-page-title h2 {
@@ -269,6 +272,9 @@
 /* for small display sizes  */
 
 @media only screen and (max-width: 320px) {
+  .hero-page .container .hero-page-title {
+    margin-left: -10px;
+  }
   .hero-page .container .hero-page-title h2 {
     font-size: 20px;
   }
