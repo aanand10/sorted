@@ -83,13 +83,24 @@
 }
 .solution-section .vdo-section .vdo-title .title-text {
   border: 1px solid green;
-  min-width: 50%;
+  min-width: 60%;
   text-align: left;
-  padding: 10px 30px;
+  /* padding: 10px 30px; */
+  padding: 10px 0;
+  padding-left: 160px;
   font-size: 22px;
 }
 .solution-section .vdo-section .vdo-title .vdo {
-  min-width: 50%;
+  min-width: 40%;
+}
+.solution-section .vdo-section .vdo-title .vdo iframe {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  /* box-shadow: 2px 4px 25px solid rgba(255, 0, 0, 0.288); */
+  border: 1px solid black;
 }
 .solution-section .counter-section {
   height: 30vh;
