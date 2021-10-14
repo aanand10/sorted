@@ -171,11 +171,14 @@ html {
   align-items: center;
   justify-content: center;
   /* border: 1px solid red; */
+  padding-top: 6vh;
 }
 .question-answer .question-answer-title h2 {
   /* text-align: center; */
+  font-size: 50px;
   display: block;
   margin: auto;
+  font-weight: 550;
 }
 .question-answer .cube-image-part {
   width: 100%;
