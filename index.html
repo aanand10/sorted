@@ -13,6 +13,7 @@
       src="style/style-mobile.css"
       media="screen and (max-width: 600px)"
     /> -->
+    <link rel="stylesheet" href="style/style-mobile.css" />
 
     <!-- nav bar js  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -30,7 +31,20 @@
   </head>
   <body>
     <!-- navbar section -->
-
+    <nav>
+      <div class="logo">Sort-ed</div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Register</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <!-- <li><a href="#">Feedback</a></li> -->
+      </ul>
+    </nav>
     <!-- navbar section ends  -->
     <!-- hero section starts  -->
     <section id="hero-page" class="hero-page">
@@ -103,7 +117,7 @@
           Solutions <span style="color: black"> We Offer </span>
         </h2>
       </div>
-      <div class="cube-image-part">
+      <div class="cube-image-part-pc">
         <img class="cube-image" src="images/que & ans.svg" alt="" />
         <div class="cube-image-text">
           <p class="question-1">Making Pricey Textbook</p>
@@ -120,6 +134,44 @@
           <img src="images/icons/book.svg" alt="" class="icon icons-2" />
           <img src="images/icons/Path 465.svg" alt="" class="icon icons-3" />
           <img src="images/icons/bulb.svg" alt="" class="icon icons-4" />
+        </div>
+      </div>
+
+      <!-- ================ mobile Q&A section =============== -->
+      <div class="cube-image-part-mobile">
+        <div class="cube-img">
+          <img
+            src="images/mobile cube.svg"
+            alt="Sorted question and answer section cube img"
+            class="mobile-cube"
+          />
+          <div class="question-answer-list">
+            <li class="list-item">
+              <img src="images/icons/bulb.svg" alt="" class="list-icon" />
+              <p class="list-content">
+                Get everthing at <strong>One Platform</strong>
+              </p>
+            </li>
+            <li class="list-item">
+              <img src="images/icons/affordable.svg" alt="" class="list-icon" />
+              <p class="list-content">
+                Making Pricey Textbook <strong>Affordable</strong>
+              </p>
+            </li>
+            <li class="list-item">
+              <img src="images/icons/Path 465.svg" alt="" class="list-icon" />
+              <p class="list-content">
+                Good Quality Textbook <strong>100% surety</strong>
+              </p>
+            </li>
+
+            <li class="list-item">
+              <img src="images/icons/book.svg" alt="" class="list-icon" />
+              <p class="list-content">
+                Say no to E-books, insted <strong>Get real books</strong>
+              </p>
+            </li>
+          </div>
         </div>
       </div>
     </section>

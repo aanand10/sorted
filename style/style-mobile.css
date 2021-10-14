@@ -1,3 +1,346 @@
-.hero-page .container .hero-page-title h2 {
-  color: black;
+/* !===================================== responsive css =========================================*/
+@media only screen and (max-width: 1024px) {
+  nav {
+    padding: 0 40px 0 50px;
+  }
+  .hero-page .container {
+    width: 90%;
+  }
+  .hero-page .container .hero-page-title {
+    margin-left: -10px;
+  }
+  /* VDO SECTION  */
+  .solution-section .vdo-section {
+    height: auto;
+  }
+  .solution-section .vdo-section .vdo-title {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .solution-section .vdo-section .vdo-title .title-text {
+    /* padding: 5px; */
+    padding: 5px 10px;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .solution-section .vdo-section .vdo-title .vdo iframe {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    /* padding: 10px 0; */
+  }
+  .solution-section .counter-section {
+    /* flex-direction: column; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 37vh;
+  }
+
+  .solution-section .counter-section .counter-box {
+    /* flex-direction: column; */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-page {
+    min-height: 100vh;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  nav .menu-btn i {
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul {
+    left: 0;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a {
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover {
+    background: none;
+    color: cyan;
+  }
+  .hero-page .container {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+  }
+  .hero-page .container .hero-page-title {
+    /* padding: 0 5px; */
+    margin-left: -10px;
+    text-align: center;
+    padding: 5px 10px;
+  }
+  .hero-page .container .hero-page-title h2 {
+    font-size: 25px;
+  }
+  .hero-page .container .hero-page-title h1 {
+    font-size: 84px;
+  }
+  .hero-page .container .hero-page-title p {
+    font-size: 22px;
+  }
+  .container button {
+    /* margin-left: -90px; */
+    display: block;
+    /* margin: 10px ; */
+    margin-left: -27px;
+    font-size: 20px;
+    padding: 10px 25px;
+  }
+
+  /* VDO SECTION  */
+  .solution-section .vdo-section {
+    height: auto;
+  }
+  .solution-section .vdo-section .vdo-title {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .solution-section .vdo-section .vdo-title .title-text {
+    padding: 5px 10px;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .solution-section .vdo-section .vdo-title .vdo iframe {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    /* padding: 10px 0; */
+  }
+  .solution-section .counter-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 37vh;
+  }
+  .solution-section .counter-section .counter-box {
+    /* flex-direction: column; */
+    width: 48%;
+    height: 15vh;
+  }
+
+  .solution-section .counter-section .counter-box p {
+    font-size: 25px;
+  }
+
+  /*======================== for rare phones ============================== */
+  @media only screen and (max-width: 470px) {
+    .hero-page .container .hero-page-title {
+      margin-left: -10px;
+      padding: 5px 13px;
+    }
+  }
+  /*======================== Questions and answer section styling ================================== */
+
+  .question-answer {
+    padding: 5px;
+    /* height: 100vh; */
+    height: auto;
+    /* border: 1px red solid; */
+  }
+  .question-answer .question-answer-title {
+    margin: 0;
+    font-size: 34px;
+    padding-top: 0;
+    height: 10vh;
+  }
+  .solution-section .counter-section .counter-box h2 {
+    font-size: 37px;
+    font-weight: 500;
+  }
+
+  .question-answer .question-answer-title h2 {
+    font-size: 34px;
+  }
+
+  .question-answer .cube-image-part-pc {
+    display: none;
+  }
+
+  .cube-image-part-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .cube-image-part-mobile .cube-img {
+    display: block;
+    margin: 10px auto;
+    /* border: 1px solid black; */
+  }
+  .cube-image-part-mobile .cube-img .mobile-cube {
+    width: 89%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+  }
+  .cube-image-part-mobile .question-answer-list {
+    padding: 20px 0;
+  }
+  .cube-image-part-mobile .question-answer-list li {
+    display: flex;
+    padding: 10px 0;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cube-image-part-mobile .question-answer-list li img {
+    width: 50px;
+    height: auto;
+    margin: 5px 0;
+  }
+  .cube-image-part-mobile .question-answer-list li p {
+    font-size: 17px;
+  }
+}
+
+/* ========================= screen 320px ===================== */
+@media only screen and (max-width: 320px) {
+  nav .menu-btn i {
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul {
+    left: 0;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a {
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover {
+    background: none;
+    color: cyan;
+  }
+  .hero-page .container .hero-page-title {
+    margin-left: -10px;
+    padding: 5px 10px;
+  }
+  .hero-page .container .hero-page-title h2 {
+    font-size: 20px;
+  }
+  .hero-page .container .hero-page-title h1 {
+    font-size: 72px;
+  }
+  .hero-page .container .hero-page-title p {
+    font-size: 18px;
+  }
+  .hero-page .container .hero-page-title {
+    margin-left: -5px;
+    text-align: center;
+  }
+  .container button {
+    margin-left: -12px;
+  }
+
+  /* VDO SECTION  */
+  .solution-section .vdo-section {
+    height: auto;
+  }
+  .solution-section .vdo-section .vdo-title {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .solution-section .vdo-section .vdo-title .title-text {
+    padding: 3px;
+    font-size: 15px;
+    text-align: center;
+    margin: 15px 0;
+  }
+  .solution-section .vdo-section .vdo-title .vdo iframe {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    /* padding: 10px 0; */
+  }
+  .solution-section .counter-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 37vh;
+    /* margin: 10px 0 20px 0; */
+  }
+  .solution-section .counter-section .counter-box {
+    /* flex-direction: column; */
+  }
+  .solution-section .counter-section .counter-box h2 {
+    font-size: 35px;
+    font-weight: 500;
+  }
+  .solution-section .counter-section .counter-box p {
+    font-size: 22px;
+  }
+  /* =================== questions and answer section ================ */
+  .question-answer .question-answer-title h2 {
+    font-size: 30px;
+  }
+  .cube-image-part-mobile .question-answer-list li p {
+    font-size: 14px;
+  }
 }
