@@ -161,13 +161,6 @@
     font-size: 25px;
   }
 
-  /*======================== for rare phones ============================== */
-  @media only screen and (max-width: 470px) {
-    .hero-page .container .hero-page-title {
-      margin-left: -10px;
-      padding: 5px 13px;
-    }
-  }
   /*======================== Questions and answer section styling ================================== */
 
   .question-answer {
@@ -234,6 +227,53 @@
   }
   .cube-image-part-mobile .question-answer-list li p {
     font-size: 17px;
+  }
+  /*!=============------- Features section -------================= */
+  .sorted-features {
+    min-height: 100vh;
+  }
+  .sorted-features .title-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+  }
+  .sorted-features .title-box h2 {
+    font-size: 34px;
+  }
+  .sorted-features .card-container {
+    flex-direction: column;
+    height: auto;
+    margin: 10px 0;
+  }
+  .sorted-features .card-container .full-card .card-flip {
+    width: 330px;
+  }
+  .sorted-features .card-container .full-card:nth-child(1) .card-flip {
+    border-top-left-radius: 10px;
+  }
+  .sorted-features .card-container .full-card:nth-child(4) .card-flip {
+    border-bottom-right-radius: 10px;
+  }
+  .sorted-features .card-container .full-card .card-bottom-circle {
+    right: -147px;
+  }
+  .sorted-features
+    .card-container
+    .full-card:hover
+    .card-flip-first
+    .card-back {
+    border-bottom-left-radius: 10px;
+  }
+  .sorted-features .card-container .full-card:hover .card-flip-last .card-back {
+    border-top-right-radius: 10px;
+  }
+}
+/*======================== for rare phones ============================== */
+@media only screen and (max-width: 470px) {
+  .hero-page .container .hero-page-title {
+    margin-left: -10px;
+    padding: 5px 13px;
   }
 }
 
@@ -342,5 +382,22 @@
   }
   .cube-image-part-mobile .question-answer-list li p {
     font-size: 14px;
+  }
+  /*======================== features section ==================  */
+  .sorted-features .card-container .full-card .card-flip {
+    width: 284px;
+  }
+  .sorted-features .card-container .full-card .card-bottom-circle {
+    right: -126px;
+  }
+  .sorted-features
+    .card-container
+    .full-card:hover
+    .card-flip-first
+    .card-back {
+    border-bottom-left-radius: 10px;
+  }
+  .sorted-features .card-container .full-card:hover .card-flip-last .card-back {
+    border-top-right-radius: 10px;
   }
 }
