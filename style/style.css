@@ -403,6 +403,8 @@ input[type="checkbox"] {
 .sorted-features .card-container .full-card:nth-child(4) .card-flip {
   border-bottom-right-radius: 100px;
 }
+.sorted-features .card-container .card-flip {
+}
 .sorted-features .card-container .card-flip .card-front {
   padding-top: -8px;
   display: flex;
@@ -432,6 +434,9 @@ input[type="checkbox"] {
   -moz-transform: rotateX(-180deg);
   -ms-transform: rotateX(-180deg);
   -o-transform: rotateX(-180deg);
+}
+.sorted-features .card-container .card-flip:hover .card-back {
+  display: block;
 }
 .sorted-features .card-container .card-flip .card-front .card-title {
   height: 92px;
