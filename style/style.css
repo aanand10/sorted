@@ -500,9 +500,14 @@ input[type="checkbox"] {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  /* border-bottom-left-radius: 100px; */
+}
+.sorted-features .card-container .full-card:hover .card-flip-first .card-back {
   border-bottom-left-radius: 100px;
 }
-
+.sorted-features .card-container .full-card:hover .card-flip-last .card-back {
+  border-top-right-radius: 100px;
+}
 /* .sorted-features .card-container .full-card:nth-child(1) .card-flip .card-back {
   background-color: #07192f;
   /* height: ; */
