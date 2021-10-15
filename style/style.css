@@ -417,7 +417,7 @@ input[type="checkbox"] {
   padding-top: -8px;
   display: flex;
   flex-direction: column;
-  border: 3px dotted green;
+  /* border: 3px dotted green; */
 
   justify-content: center;
   align-items: center;
