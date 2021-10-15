@@ -474,4 +474,17 @@
   .sorted-features .card-container .full-card:hover .card-flip-last .card-back {
     border-top-right-radius: 10px;
   }
+
+  /* ===============
+  process section ================ */
+  .sorted-hai .sorted-hai-mobile .sorted-hai-content .content {
+    margin: 37px 0;
+  }
+  .sorted-hai .sorted-hai-mobile .sorted-hai-content h3 {
+    font-weight: 450;
+    font-size: 13px;
+  }
+  .sorted-hai .sorted-hai-mobile .sorted-hai-content p {
+    font-size: 10px !important;
+  }
 }
