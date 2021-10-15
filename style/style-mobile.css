@@ -271,7 +271,7 @@
   /* !======================process section =================== */
   .sorted-hai {
     height: auto;
-    padding: 15px 0;
+    padding: 25px 0;
     width: 100%;
     background-color: #d9e4f5;
     background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
@@ -295,6 +295,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .sorted-hai .sorted-hai-mobile .sorted-hai-title h2 {
+    font-size: 34px;
   }
   .sorted-hai .sorted-hai-mobile .image-content-container {
     display: flex;
