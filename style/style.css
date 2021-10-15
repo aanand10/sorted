@@ -375,16 +375,18 @@ input[type="checkbox"] {
   flex-direction: column;
   /* border: #000b4d 3px solid; */
 }
-.sorted-features .card-container .card-flip {
+.sorted-features .card-container .full-card .card-flip {
   min-height: 420px;
   width: 285px;
   /*width: 100%;
   */
+  padding: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(0, 0, 0);
+  /*border: 1px solid rgb(0, 0, 0);
+  */
   margin: 15px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -396,8 +398,14 @@ input[type="checkbox"] {
   backdrop-filter: blur(9px);
   -webkit-backdrop-filter: blur(9px);
   border-radius: 10px;
-  /*border: 1px solid rgba(255, 255, 255, 0.18);
-  */
+  /*!--------------------------------------------------------*/
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
 }
 .sorted-features .card-container .full-card:nth-child(1) .card-flip {
   border-top-left-radius: 100px;
@@ -405,62 +413,100 @@ input[type="checkbox"] {
 .sorted-features .card-container .full-card:nth-child(4) .card-flip {
   border-bottom-right-radius: 100px;
 }
-.sorted-features .card-container .card-flip {
-}
-.sorted-features .card-container .card-flip .card-front {
+.sorted-features .card-container .full-card .card-flip .card-front {
   padding-top: -8px;
   display: flex;
   flex-direction: column;
-  /*border: 3px dotted green;
-  */
+  border: 3px dotted green;
+
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 376px;
+  /*!----------------------------------*/
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  -ms-transform: rotateX(0deg);
-  -o-transform: rotateX(0deg);
 }
-.sorted-features .card-container .card-flip:hover {
+
+/* .sorted-features .card-container .full-card:hover .card-flip .card-front {
+} */
+
+.sorted-features .card-container .full-card .card-flip .card-back {
+  /*display: none;
+  */
+  height: 100%;
+  background-color: #000b4d;
+  padding: 10px;
+  color: wheat;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.sorted-features .card-container .full-card:hover .card-flip {
+  background-color: transparent;
+}
+.sorted-features .card-container .full-card:hover .card-flip-first {
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 10px;
+}
+.sorted-features .card-container .full-card:hover .card-flip-last {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 100px;
+}
+.sorted-features .card-container .full-card:hover .card-flip-common {
+  border-bottom-left-radius: 10px;
+  /* border-top-right-radius: 100px; */
+}
+.sorted-features .card-container .full-card:hover .card-flip .card-front {
   transform: rotateX(-180deg);
   -webkit-transform: rotateX(-180deg);
   -moz-transform: rotateX(-180deg);
   -ms-transform: rotateX(-180deg);
   -o-transform: rotateX(-180deg);
 }
-.sorted-features .card-container .full-card .card-flip .card-back {
-  display: none;
-}
-.sorted-features .card-container .card-flip:hover .card-back {
-  /*display: block;
-  */
-  backface-visibility: hidden;
-  transform: rotateX(180deg);
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: rotateX(180deg);
-  -moz-transform: rotateX(180deg);
-  -ms-transform: rotateX(180deg);
-  -o-transform: rotateX(180deg);
+
+.sorted-features .card-container .full-card:hover .card-flip .card-back {
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-bottom-left-radius: 100px;
 }
 
-.sorted-features .card-container .full-card:nth-child(1) .card-flip .card-back {
+/* .sorted-features .card-container .full-card:nth-child(1) .card-flip .card-back {
   background-color: #07192f;
   /* height: ; */
-}
+/* } */
 .sorted-features .card-container .card-flip .card-front .card-title {
   height: 92px;
   width: 100%;
