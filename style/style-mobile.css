@@ -276,6 +276,7 @@
     background-color: #d9e4f5;
     background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
     padding: 0 8px;
+    color: #0b2070;
   }
   .sorted-hai .sorted-hai-pc {
     display: none;
@@ -291,6 +292,7 @@
   .sorted-hai .sorted-hai-mobile .sorted-hai-title {
     height: 10vh;
     width: 100%;
+
     /* border: 2px solid blue; */
     display: flex;
     justify-content: center;
@@ -330,8 +332,12 @@
   .sorted-hai .sorted-hai-mobile .sorted-hai-content {
     font-size: 14px;
   }
+  .sorted-hai .sorted-hai-mobile .sorted-hai-content h3 {
+    font-weight: 400;
+  }
   .sorted-hai .sorted-hai-mobile .sorted-hai-content .content-text {
     font-size: 12px;
+    font-weight: 300;
   }
   .sorted-hai .sorted-hai-mobile .sorted-hai-content .content {
     margin: 41px 0;
