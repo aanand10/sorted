@@ -437,9 +437,29 @@ input[type="checkbox"] {
   -ms-transform: rotateX(-180deg);
   -o-transform: rotateX(-180deg);
 }
+.sorted-features .card-container .full-card .card-flip .card-back {
+  display: none;
+}
 .sorted-features .card-container .card-flip:hover .card-back {
-  display: block;
+  /*display: block;
+  */
   backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+}
+
+.sorted-features .card-container .full-card:nth-child(1) .card-flip .card-back {
+  background-color: #07192f;
+  /* height: ; */
 }
 .sorted-features .card-container .card-flip .card-front .card-title {
   height: 92px;
