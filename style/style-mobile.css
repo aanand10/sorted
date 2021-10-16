@@ -360,10 +360,14 @@
   .pricing .pricing-container .pricing-card .pricing-card-title {
     margin: 0;
   }
+  .pricing .pricing-container .pricing-card {
+    margin-bottom: 60px;
+  }
   .pricing .pricing-container .pricing-card:nth-child(odd) {
     width: 83%;
     height: 50vh;
-    margin: 20px 0;
+    /* margin: 20px 0; */
+
     box-shadow: 1px 1px 35px rgba(0, 0, 0, 0.3);
   }
   .pricing
