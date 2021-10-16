@@ -40,6 +40,20 @@
   .solution-section .counter-section .counter-box {
     /* flex-direction: column; */
   }
+  .pricing .pricing-container .card-1:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  .pricing .pricing-container .card-3:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -380,6 +394,20 @@
   /* .pricing .pricing-container .pricing-card .pricing-card-numbers {
     margin: 0;
   } */
+  .pricing .pricing-container .card-1:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  .pricing .pricing-container .card-3:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
 }
 /*======================== for rare phones ============================== */
 @media only screen and (max-width: 470px) {
@@ -550,5 +578,19 @@
   .pricing .pricing-container .pricing-card .pricing-card-content {
     margin: 7px 0;
     font-size: 11px;
+  }
+  .pricing .pricing-container .card-1:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  .pricing .pricing-container .card-3:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
   }
 }
