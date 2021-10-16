@@ -342,6 +342,33 @@
   .sorted-hai .sorted-hai-mobile .sorted-hai-content .content {
     margin: 41px 0;
   }
+  /* ================== pricing setion ================== */
+  .pricing {
+    height: auto;
+  }
+  .pricing .pricing-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 2px;
+  }
+  .pricing .pricing-container .pricing-card {
+    width: 90%;
+  }
+
+  .pricing .pricing-container .pricing-card:nth-child(odd) {
+    width: 90%;
+    margin: 20px 0;
+    box-shadow: 1px 1px 35px rgba(0, 0, 0, 0.3);
+  }
+  .pricing
+    .pricing-container
+    .pricing-card:nth-child(odd)
+    .pricing-card-content {
+    margin: 7px 0;
+    font-size: 14px;
+  }
 }
 /*======================== for rare phones ============================== */
 @media only screen and (max-width: 470px) {
@@ -486,5 +513,31 @@
   }
   .sorted-hai .sorted-hai-mobile .sorted-hai-content p {
     font-size: 10px !important;
+  }
+  /* ================ pricing setion ============== */
+  .pricing {
+    width: 100%;
+  }
+  .pricing .pricing-title h2 {
+    color: #0b2070;
+    font-size: 28px;
+    /* border: 3px solid blue; */
+  }
+  .pricing .pricing-container .pricing-card .pricing-card-numbers {
+    margin: 0;
+  }
+  .pricing .pricing-container .pricing-card .pricing-card-title {
+    margin: 0;
+  }
+  .pricing
+    .pricing-container
+    .pricing-card:nth-child(odd)
+    .pricing-card-content {
+    margin: 7px 0;
+    font-size: 11px;
+  }
+  .pricing .pricing-container .pricing-card .pricing-card-content {
+    margin: 7px 0;
+    font-size: 11px;
   }
 }
