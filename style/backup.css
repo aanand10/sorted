@@ -647,3 +647,224 @@ input[type="checkbox"] {
   color: #0b2070;
   font-weight: 300;
 }
+
+/* ! ==================Pricing section suru ================== */
+.pricing {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #d9e4f5;
+  background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pricing .pricing-title {
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing .pricing-title h2 {
+  color: #0b2070;
+  font-size: 50px;
+  /* border: 3px solid blue; */
+}
+.pricing .pricing-container {
+  height: 80vh;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* border: 3px solid green; */
+}
+.pricing .pricing-container .pricing-card {
+  height: 70vh;
+  width: 27%;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: rgba(0, 0, 0, 0.103) 1px solid;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  box-shadow: 2px 2px 35px rgba(0, 0, 0, 0.3);
+}
+.pricing .pricing-container .pricing-card:nth-child(odd) {
+  height: 55vh;
+  width: 23%;
+}
+
+.pricing .pricing-container .pricing-card .pricing-card-title {
+  /* border: #0093e9 2px solid; */
+  margin: 15px 0;
+  font-size: 38px;
+  font-weight: 450;
+  color: #253983;
+}
+.pricing .pricing-container .pricing-card:nth-child(odd) .pricing-card-title {
+  margin: 8px 0;
+  font-size: 30px;
+  font-weight: 450;
+}
+.pricing .pricing-container .pricing-card .pricing-card-numbers {
+  /* border: #00090e 2px solid; */
+  margin: 10px 0;
+  font-size: 40px;
+  color: #5c7aea;
+}
+
+.pricing .pricing-container .pricing-card:nth-child(odd) .pricing-card-numbers {
+  margin: 7px 0;
+  color: #ff4500;
+}
+.pricing .pricing-container .pricing-card .pricing-card-numbers .rupaya,
+.time {
+  font-size: 20px;
+  vertical-align: bottom;
+  color: #253983;
+}
+.pricing .pricing-container .pricing-card .pricing-card-numbers .rupaya {
+  /* text-align: start; */
+  vertical-align: top;
+}
+.pricing .pricing-container .pricing-card .pricing-card-content {
+  /* border: crimson 2px solid; */
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  padding: 0 10px;
+  font-size: 15px;
+}
+.pricing .pricing-container .pricing-card:nth-child(odd) .pricing-card-content {
+  margin: 7px 0;
+  font-size: 12px;
+}
+.pricing .pricing-container .pricing-card .pricing-card-content li {
+  /* border: 2px solid blue; */
+  font-weight: 300;
+  color: #253983;
+  text-align: center;
+  margin: 7px 0;
+}
+.pricing
+  .pricing-container
+  .pricing-card:nth-child(odd)
+  .pricing-card-content
+  li {
+  margin: 5px 0;
+}
+
+/* hover effect of card */
+.pricing .pricing-container .card-1 {
+  transition: transform 0.2s;
+}
+.pricing .pricing-container .card-1:hover {
+  position: relative;
+  transform: scale(1.2);
+  box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.712);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  border: 1px solid #c0c0c0;
+  background-image: linear-gradient(135deg, #172b4d 0, #0a48b3 100%);
+  box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.5),
+    inset 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.pricing .pricing-container .card-1:hover h3 {
+  color: #c0c0c0;
+}
+
+.pricing .pricing-container .card-1:hover .pricing-card-numbers {
+  color: #c0c0c0;
+}
+.pricing .pricing-container .card-1:hover h1 .rupaya {
+  color: whitesmoke;
+}
+.pricing .pricing-container .card-1:hover h1 .time {
+  color: whitesmoke;
+}
+.pricing .pricing-container .card-1:hover ul li {
+  color: #c0c0c0;
+}
+.pricing .pricing-container .card-2 {
+  transition: transform ease-in 0.2s;
+  -webkit-transition: transform ease-in 0.2s;
+  -moz-transition: transform ease-in 0.2s;
+  -ms-transition: transform ease-in 0.2s;
+  -o-transition: transform ease-in 0.2s;
+}
+.pricing .pricing-container .card-2:hover {
+  position: relative;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.5),
+    inset 0 0 20px rgba(255, 255, 255, 0.5);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  background-color: transparent;
+  border-color: #ffd700;
+  background-image: linear-gradient(135deg, #172b4d 0, #0a48b3 100%);
+  border: 1px solid #fdd017;
+}
+.pricing .pricing-container .card-2:hover h3 {
+  color: #ffd700;
+}
+.pricing .pricing-container .card-2:hover h1 {
+  color: #ffd700;
+}
+.pricing .pricing-container .card-2:hover h1 .rupaya {
+  color: whitesmoke;
+}
+.pricing .pricing-container .card-2:hover h1 .time {
+  color: whitesmoke;
+}
+.pricing .pricing-container .card-2:hover ul li {
+  color: #ffd700;
+}
+.pricing .pricing-container .card-3 {
+  transition: transform 0.2s;
+}
+.pricing .pricing-container .card-3:hover {
+  position: relative;
+  transform: scale(1.2);
+  box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.712);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  background-image: linear-gradient(135deg, #172b4d 0, #0a48b3 100%);
+  border: 1px solid #c0c0c0;
+  box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.5),
+    inset 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.pricing .pricing-container .card-3:hover h3 {
+  color: #c0c0c0;
+}
+
+.pricing .pricing-container .card-3:hover .pricing-card-numbers {
+  color: #c0c0c0;
+}
+.pricing .pricing-container .card-3:hover h1 .rupaya {
+  color: whitesmoke;
+}
+.pricing .pricing-container .card-3:hover h1 .time {
+  color: whitesmoke;
+}
+.pricing .pricing-container .card-3:hover ul li {
+  color: #c0c0c0;
+}

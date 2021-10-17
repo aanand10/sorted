@@ -40,6 +40,20 @@
   .solution-section .counter-section .counter-box {
     /* flex-direction: column; */
   }
+  .pricing .pricing-container .card-1:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  .pricing .pricing-container .card-3:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -342,6 +356,66 @@
   .sorted-hai .sorted-hai-mobile .sorted-hai-content .content {
     margin: 41px 0;
   }
+  /* ================== pricing setion ================== */
+  .pricing {
+    height: auto;
+  }
+  .pricing .pricing-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 2px;
+  }
+  .pricing .pricing-container .pricing-card {
+    width: 83%;
+    height: 57vh;
+  }
+  .pricing .pricing-container .pricing-card .pricing-card-title {
+    margin: 0;
+  }
+  .pricing .pricing-container .pricing-card {
+    margin-bottom: 60px;
+  }
+  .pricing .pricing-container .pricing-card:nth-child(odd) {
+    width: 83%;
+    height: 50vh;
+    /* margin: 20px 0; */
+
+    box-shadow: 1px 1px 35px rgba(0, 0, 0, 0.3);
+  }
+  .pricing
+    .pricing-container
+    .pricing-card:nth-child(odd)
+    .pricing-card-content {
+    margin: 7px 0;
+    font-size: 14px;
+  }
+  /* .pricing .pricing-container .pricing-card .pricing-card-numbers {
+    margin: 0;
+  } */
+  .pricing .pricing-container .card-1:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    border: 1px solid #c0c0c0;
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.5),
+      inset 0 0 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.712);
+  }
+  .pricing .pricing-container .card-3:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    border: 1px solid #c0c0c0;
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.5),
+      inset 0 0 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.712);
+  }
 }
 /*======================== for rare phones ============================== */
 @media only screen and (max-width: 470px) {
@@ -473,5 +547,66 @@
   }
   .sorted-features .card-container .full-card:hover .card-flip-last .card-back {
     border-top-right-radius: 10px;
+  }
+
+  /* ===============
+  process section ================ */
+  .sorted-hai .sorted-hai-mobile .sorted-hai-content .content {
+    margin: 37px 0;
+  }
+  .sorted-hai .sorted-hai-mobile .sorted-hai-content h3 {
+    font-weight: 450;
+    font-size: 13px;
+  }
+  .sorted-hai .sorted-hai-mobile .sorted-hai-content p {
+    font-size: 10px !important;
+  }
+  /* ================ pricing setion ============== */
+  .pricing {
+    width: 100%;
+  }
+  .pricing .pricing-title h2 {
+    color: #0b2070;
+    font-size: 28px;
+    /* border: 3px solid blue; */
+  }
+  .pricing .pricing-container .pricing-card .pricing-card-numbers {
+    margin: 0;
+  }
+  .pricing .pricing-container .pricing-card .pricing-card-title {
+    margin: 0;
+  }
+  .pricing
+    .pricing-container
+    .pricing-card:nth-child(odd)
+    .pricing-card-content {
+    margin: 7px 0;
+    font-size: 11px;
+  }
+  .pricing .pricing-container .pricing-card .pricing-card-content {
+    margin: 7px 0;
+    font-size: 11px;
+  }
+  .pricing .pricing-container .card-1:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    border: 1px solid #c0c0c0;
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.5),
+      inset 0 0 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.712);
+  }
+  .pricing .pricing-container .card-3:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    border: 1px solid #c0c0c0;
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.5),
+      inset 0 0 20px rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.712);
   }
 }

@@ -868,3 +868,40 @@ input[type="checkbox"] {
 .pricing .pricing-container .card-3:hover ul li {
   color: #c0c0c0;
 }
+
+/* ==================== search bar section ================= */
+
+.searchbar {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9e4f5;
+  background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+}
+.searchbar .inner-box {
+  width: 70%;
+  height: 70vh;
+  border: 3px solid black;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #172b4d 0, #0a48b3 100%);
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37),
+    inset 2px 2px 25px rgba(255, 255, 255, 0.315);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.637);
+}
