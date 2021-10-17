@@ -416,6 +416,44 @@
       inset 0 0 20px rgba(255, 255, 255, 0.5);
     box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.712);
   }
+
+  /* style of search section */
+  .searchbar .inner-box .title-box {
+    width: 100%;
+  }
+  .searchbar .inner-box .search-box {
+    width: 100%;
+    margin: 17px 0 0 0;
+  }
+  .searchbar .inner-box .search-box .search-bar button {
+    padding: 3px 28px;
+  }
+  .searchbar .inner-box .title-box h2 {
+    font-size: 23px;
+    text-align: center;
+  }
+  .searchbar .inner-box {
+    width: 90%;
+    height: 74vh;
+  }
+  .searchbar .inner-box .bottom-box .bottom-box-subheading {
+    font-size: 22px;
+  }
+  .searchbar .inner-box .bottom-box {
+    width: 100%;
+  }
+  .searchbar .inner-box .search-box:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+  }
 }
 /*======================== for rare phones ============================== */
 @media only screen and (max-width: 470px) {
