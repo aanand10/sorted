@@ -26,6 +26,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+  <!-- ================ counter script =================== -->
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ 
 </head>
 
 <body>
@@ -80,19 +89,19 @@
       </div>
       <div class="counter-section">
         <div class="counter-box">
-          <h2>2000<span class="square">+</span></h2>
+          <h2> <span class="counter">2000</span><span class="square">+</span></h2>
           <p>Registrations</p>
         </div>
         <div class="counter-box">
-          <h2>5<span class="square">+</span></h2>
+          <h2> <span class="counter">5</span> <span class="square">+</span></h2>
           <p>Publications</p>
         </div>
         <div class="counter-box">
-          <h2>20<span class="square">+</span></h2>
+          <h2> <span class="counter">20</span> <span class="square">+</span></h2>
           <p>Colleges</p>
         </div>
         <div class="counter-box">
-          <h2>50<span class="square">+</span></h2>
+          <h2> <span class="counter">50</span> <span class="square">+</span></h2>
           <p>Ambassadors</p>
         </div>
       </div>
@@ -384,8 +393,8 @@
       </div>
       <div class="search-box">
         <div class="search-bar">
-           <input type="text" id="search" name="search" placeholder="Check your College here...">
-           <button>Search</button>
+          <input type="text" id="search" name="search" placeholder="Check your College here...">
+          <button>Search</button>
         </div>
       </div>
       <div class="bottom-box">
@@ -393,10 +402,13 @@
         <h1 class="bottom-box-heading">Sort-Ed</h1>
         <button class="bottom-box-button">Register Now</button>
       </div>
-
     </div>
     </div>
   </section>
+
+  <!--======================= footer section =============== -->
+  <footer></footer>
+
 
 
 
@@ -420,6 +432,18 @@
       scaleMobile: 1.0,
     });
   </script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script>
+    jQuery(document).ready(function () {
+      $('.counter').counterUp({
+        delay: 5,
+        time: 1500
+      });
+    })
+  </script>
+  
+
 </body>
 
 </html>
