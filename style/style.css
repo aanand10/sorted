@@ -949,6 +949,16 @@ input[type="checkbox"] {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
 }
+.searchbar .inner-box .search-box:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.searchbar .inner-box .search-box:hover .search-bar {
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.342);
+}
 .searchbar .inner-box .search-box .search-bar input {
   /* padding: 10px 90px; */
   margin: 5px 5px;
@@ -976,7 +986,8 @@ input[type="text"]::placeholder {
   height: 34px;
   font-size: 18px;
   color: white;
-  border: none;
+  /* border: none; */
+  border: 0.5px solid #000c4d69;
   box-shadow: inset 1px 1px 5px rgb(255 255 255 / 55%);
   background-color: #40c676;
   -webkit-border-radius: 5px;
