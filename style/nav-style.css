@@ -17,7 +17,7 @@
   --small-font-size: 0.813rem;
 
   /*===== z index =====*/
-  --z-fixed: 100;
+  /* --z-fixed: 100; */
 }
 
 @media screen and (min-width: 768px) {
@@ -28,12 +28,12 @@
 }
 
 /*===== BASE =====*/
-*,
+/* *,
 ::before,
 ::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
+} */
 
 /* body {
   margin: var(--header-height) 0 0 0;
@@ -52,10 +52,10 @@ a {
   text-decoration: none;
 }
 
-/* img {
+img {
   max-width: 100%;
   height: auto;
-} */
+}
 
 .bd-grid {
   max-width: 1024px;
@@ -76,7 +76,7 @@ a {
   left: 0;
   padding: 1.9rem 1.5rem;
   background-color: var(--dark-color);
-  z-index: var(--z-fixed);
+  z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,18 +199,6 @@ svg {
 .nav__social-icon:hover {
   color: var(--first-color);
 }
-
-/*Aparecer menu*/
-.show {
-  left: 0;
-}
-
-/*Active menu*/
-.active {
-  color: var(--first-color);
-}
-
-/*===== MEDIA QUERIES =====*/
 /*===== NAV =====*/
 @media screen and (max-width: 768px) {
   .nav {
@@ -227,6 +215,19 @@ svg {
     transition: 0.5s;
   }
 }
+/*Aparecer menu*/
+.show {
+  left: 0;
+  /* z-index: 1000; */
+}
+
+/*Active menu*/
+.active {
+  color: var(--first-color);
+}
+
+/*===== MEDIA QUERIES =====*/
+
 @media screen and (min-width: 768px) {
   /* body {
     margin: 0;
