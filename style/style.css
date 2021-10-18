@@ -1114,8 +1114,8 @@ footer {
 .footer .footer-wrapper .links-section .social-wrapper .box-1 {
   /* border: #0093e9 2px solid; */
 }
-.footer .footer-wrapper .links-section .social-wrapper .box-1 p,
-a {
+.footer .footer-wrapper .links-section .social-wrapper .box-1 .box-1-text,
+.mail {
   display: block;
   margin-bottom: 10px;
   /* font-family: Inter, sans-serif; */

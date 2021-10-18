@@ -176,9 +176,12 @@ svg {
   text-align: center;
   font-weight: 500;
   font-size: 20px;
+  /* margin-left: 700px; */
+  /* border: white 1px solid; */
 }
 
 .nav__item {
+  size: 15px;
   margin: 2.5rem 0;
 }
 
@@ -213,6 +216,9 @@ svg {
     z-index: var(--z-fixed);
     -webkit-transition: 0.5s;
     transition: 0.5s;
+  }
+  .nav-menu {
+    margin-left: 0;
   }
 }
 /*Aparecer menu*/
@@ -284,18 +290,24 @@ svg {
     display: flex;
   }
   .nav__item {
+    font-size: 17px;
     margin: 0 0.25rem;
   }
   .nav__link {
     padding: 0.5rem 0.8rem;
     border-radius: 0.25rem;
+    font-size: 20px;
   }
   .nav__link:hover {
     background-color: var(--first-color);
   }
   .active {
+    font-size: 17px;
     background-color: var(--first-color);
     color: var(--white-color);
+  }
+  .nav-menu {
+    margin-left: 0;
   }
 }
 
@@ -303,5 +315,8 @@ svg {
   .bd-grid {
     margin-left: auto;
     margin-right: auto;
+  }
+  .nav-menu {
+    margin-left: 0;
   }
 }
