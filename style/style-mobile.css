@@ -413,6 +413,53 @@
     -ms-transition: 0.2s;
     -o-transition: 0.2s;
   }
+  /* =============== footer section============== */
+  footer {
+    width: 100%;
+    height: auto;
+  }
+  .footer .footer-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    /* border: 2px solid white; */
+    padding: 10px;
+  }
+  .footer .footer-wrapper .links-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 20px;
+    /* border: 2px solid white; */
+  }
+  .footer .footer-wrapper .links-section .links-wrapper .box-1 .box-1-link {
+    margin-bottom: 7px;
+  }
+  .footer .footer-wrapper .links-section .links-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-top: 25px;
+    /* border: 2px solid white; */
+  }
+  .footer .footer-wrapper .links-section .social-wrapper {
+    margin-top: 25px;
+    /* border: 2px solid white; */
+    height: auto;
+  }
+  .footer .footer-wrapper .links-section .social-wrapper .box-1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .footer-wrapper .links-section .social-wrapper .box-2 {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+  }
 }
 /*======================== for rare phones ============================== */
 @media only screen and (max-width: 470px) {
