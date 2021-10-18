@@ -1,8 +1,5 @@
 /* !===================================== responsive css =========================================*/
 @media only screen and (max-width: 1024px) {
-  nav {
-    padding: 0 40px 0 50px;
-  }
   .hero-page .container {
     width: 90%;
   }
@@ -64,45 +61,7 @@
     padding: 0;
     margin: 0;
   }
-  nav .menu-btn i {
-    display: block;
-  }
-  #click:checked ~ .menu-btn i:before {
-    content: "\f00d";
-  }
-  nav ul {
-    position: fixed;
-    top: 80px;
-    left: -100%;
-    background: #111;
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: block;
-    transition: all 0.3s ease;
-  }
-  #click:checked ~ ul {
-    left: 0;
-  }
-  nav ul li {
-    width: 100%;
-    margin: 40px 0;
-  }
-  nav ul li a {
-    width: 100%;
-    margin-left: -100%;
-    display: block;
-    font-size: 20px;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  #click:checked ~ ul li a {
-    margin-left: 0px;
-  }
-  nav ul li a.active,
-  nav ul li a:hover {
-    background: none;
-    color: cyan;
-  }
+
   .hero-page .container {
     /* border: 1px solid blue; */
     display: flex;
@@ -465,45 +424,6 @@
 
 /* ========================= screen 320px ===================== */
 @media only screen and (max-width: 320px) {
-  nav .menu-btn i {
-    display: block;
-  }
-  #click:checked ~ .menu-btn i:before {
-    content: "\f00d";
-  }
-  nav ul {
-    position: fixed;
-    top: 80px;
-    left: -100%;
-    background: #111;
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: block;
-    transition: all 0.3s ease;
-  }
-  #click:checked ~ ul {
-    left: 0;
-  }
-  nav ul li {
-    width: 100%;
-    margin: 40px 0;
-  }
-  nav ul li a {
-    width: 100%;
-    margin-left: -100%;
-    display: block;
-    font-size: 20px;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  #click:checked ~ ul li a {
-    margin-left: 0px;
-  }
-  nav ul li a.active,
-  nav ul li a:hover {
-    background: none;
-    color: cyan;
-  }
   .hero-page .container .hero-page-title {
     margin-left: -10px;
     padding: 5px 10px;

@@ -15,9 +15,15 @@
       media="screen and (max-width: 600px)"
     /> -->
   <link rel="stylesheet" href="style/style-mobile.css" />
+  <link rel="stylesheet" href="style/nav-style.css">
 
   <!-- nav bar js  -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <!-- ===== IONICONS ===== -->
+   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+   <!--===== MAIN JS =====-->
+  
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
   <!-- vanta js code  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
@@ -39,20 +45,54 @@
 
 <body>
   <!-- navbar section -->
-  <nav>
-    <div class="logo">Sort-ed</div>
-    <input type="checkbox" id="click" />
-    <label for="click" class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </label>
-    <ul>
-      <li><a class="active" href="#">Home</a></li>
-      <li><a href="#">Register</a></li>
-      <li><a href="#vdo-section">About</a></li>
-      <li><a href="#">Blog</a></li>
-      <!-- <li><a href="#">Feedback</a></li> -->
-    </ul>
-  </nav>
+  <header class="header">
+    <a href="#" class="header__logo">Sasti Dukan</a>
+
+    <ion-icon
+      name="menu-outline"
+      class="header__toggle"
+      id="nav-toggle"
+    ></ion-icon>
+
+    <nav class="nav" id="nav-menu">
+      <div class="nav__content bd-grid">
+        <ion-icon
+          name="close-outline"
+          class="nav__close"
+          id="nav-close"
+        ></ion-icon>
+
+        <div class="nav__perfil">
+          <div class="nav__img">
+            <img src="assets/img/perfil.png" alt="" />
+          </div>
+
+          <div>
+            <a href="#" class="nav__name">Sasti Dukan</a>
+            <span class="nav__profesion">Web designer</span>
+          </div>
+        </div>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#hero-page" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item"><a href="#question-answer" class="nav__link">About</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#p" class="nav__link">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#one" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
   <!-- navbar section ends  -->
   <!-- hero section starts  -->
   <section id="hero-page" class="hero-page">
@@ -413,7 +453,35 @@
 
 
   <!-- js part -->
-
+  <!-- <script src="js/nav.js"></script> -->
+  <script>/*===== MENU SHOW Y HIDDEN =====*/
+    const navMenu = document.getElementById("nav-menu"),
+      toggleMenu = document.getElementById("nav-toggle"),
+      closeMenu = document.getElementById("nav-close");
+    
+    /*SHOW*/
+    toggleMenu.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+    });
+    
+    /*HIDDEN*/
+    closeMenu.addEventListener("click", () => {
+      navMenu.classList.remove("show");
+    });
+    
+    /*===== ACTIVE AND REMOVE MENU =====*/
+    const navLink = document.querySelectorAll(".nav__link");
+    
+    function linkAction() {
+      /*Active link*/
+      navLink.forEach((n) => n.classList.remove("active"));
+      this.classList.add("active");
+    
+      /*Remove menu mobile*/
+      navMenu.classList.remove("show");
+    }
+    navLink.forEach((n) => n.addEventListener("click", linkAction));
+    </script>
   <script type="text/javascript">
     $(".btn").on("click", function () {
       $(".menu").toggleClass("show");
