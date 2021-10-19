@@ -91,6 +91,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-left: 0;
 }
 
 .header__logo {
@@ -288,6 +289,7 @@ svg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: 700px;
   }
   .nav__item {
     font-size: 17px;
