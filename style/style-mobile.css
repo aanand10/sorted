@@ -51,6 +51,18 @@
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
   }
+
+  /* floating icon section  */
+  .floating-icon {
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  .floating-icon a .register-icon {
+    width: 38px;
+    height: 38px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -460,6 +472,17 @@
     justify-content: center;
     align-content: center;
   }
+  /* floating icon section  */
+  .floating-icon {
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  .floating-icon a .register-icon {
+    width: 38px;
+    height: 38px;
+  }
 }
 /*======================== for rare phones ============================== */
 @media only screen and (max-width: 470px) {
@@ -613,5 +636,16 @@
     box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.5),
       inset 0 0 20px rgba(255, 255, 255, 0.5);
     box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.712);
+  }
+  /* floating icon section  */
+  .floating-icon {
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  .floating-icon a .register-icon {
+    width: 38px;
+    height: 38px;
   }
 }
